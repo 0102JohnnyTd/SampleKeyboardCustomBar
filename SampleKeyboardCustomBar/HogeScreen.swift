@@ -23,17 +23,13 @@ struct HogeScreen: View {
         }
         .padding(16)
         .toolbar {
-            if focusedField == .memoField {
-                pattern2TextFieldKeyboardCustomBar
-            } else {
-                pattern1TextFieldsKeyboardCustomBar
+            ToolbarItemGroup(placement: .keyboard) {
+                if focusedField == .memoField {
+                    pattern2TextFieldKeyboardCustomBar
+                } else {
+                    pattern1TextFieldsKeyboardCustomBar
+                }
             }
-        }
-        .onChange(of: focusedField) { _, newValue in
-            guard let newValue else {
-                return
-            }
-            focusedField = newValue
         }
     }
     
@@ -55,12 +51,6 @@ struct HogeScreen: View {
                 .focused($focusedField, equals: .field3)
         }
         .textFieldStyle(.roundedBorder)
-        .onChange(of: focusedField) { _, newValue in
-            guard let newValue else {
-                return
-            }
-            focusedField = newValue
-        }
     }
     
     var pattern2View: some View {
@@ -73,31 +63,29 @@ struct HogeScreen: View {
         }
     }
     
-    var pattern1TextFieldsKeyboardCustomBar: some ToolbarContent {
-        ToolbarItemGroup(placement: .keyboard) {
-            HStack(spacing: 4) {
-                Button(action: {
-                    moveToPreviousField()
-                }) {
-                    Image(systemName: "chevron.left")
-                }
-                Button(action: {
-                    moveToNextField()
-                }) {
-                    Image(systemName: "chevron.right")
-                }
-                Spacer()
-                Button(action: {
-                    focusedField = nil // キーボードを閉じる
-                }) {
-                    Text("閉じる")
-                }
+    var pattern1TextFieldsKeyboardCustomBar: some View {
+        HStack(spacing: 4) {
+            Button(action: {
+                moveToPreviousField()
+            }) {
+                Image(systemName: "chevron.left")
+            }
+            Button(action: {
+                moveToNextField()
+            }) {
+                Image(systemName: "chevron.right")
+            }
+            Spacer()
+            Button(action: {
+                focusedField = nil // キーボードを閉じる
+            }) {
+                Text("閉じる")
             }
         }
     }
     
-    var pattern2TextFieldKeyboardCustomBar: some ToolbarContent {
-        ToolbarItemGroup(placement: .keyboard) {
+    var pattern2TextFieldKeyboardCustomBar: some View {
+        HStack(spacing: 4) {
             Spacer()
             Button(action: {
                 focusedField = nil // キーボードを閉じる
