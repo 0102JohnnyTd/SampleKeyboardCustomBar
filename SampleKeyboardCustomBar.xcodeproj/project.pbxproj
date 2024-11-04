@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		1C7DF1D12CD8540700DC1720 /* SampleKeyboard CustomBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SampleKeyboard CustomBar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C7DF1D12CD8540700DC1720 /* SampleKeyboardCustomBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleKeyboardCustomBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1C7DF1D32CD8540700DC1720 /* SampleKeyboard CustomBar */ = {
+		1C7DF1D32CD8540700DC1720 /* SampleKeyboardCustomBar */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "SampleKeyboard CustomBar";
+			path = SampleKeyboardCustomBar;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		1C7DF1C82CD8540700DC1720 = {
 			isa = PBXGroup;
 			children = (
-				1C7DF1D32CD8540700DC1720 /* SampleKeyboard CustomBar */,
+				1C7DF1D32CD8540700DC1720 /* SampleKeyboardCustomBar */,
 				1C7DF1D22CD8540700DC1720 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +40,7 @@
 		1C7DF1D22CD8540700DC1720 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1C7DF1D12CD8540700DC1720 /* SampleKeyboard CustomBar.app */,
+				1C7DF1D12CD8540700DC1720 /* SampleKeyboardCustomBar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1C7DF1D02CD8540700DC1720 /* SampleKeyboard CustomBar */ = {
+		1C7DF1D02CD8540700DC1720 /* SampleKeyboardCustomBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1C7DF1DF2CD8540900DC1720 /* Build configuration list for PBXNativeTarget "SampleKeyboard CustomBar" */;
+			buildConfigurationList = 1C7DF1DF2CD8540900DC1720 /* Build configuration list for PBXNativeTarget "SampleKeyboardCustomBar" */;
 			buildPhases = (
 				1C7DF1CD2CD8540700DC1720 /* Sources */,
 				1C7DF1CE2CD8540700DC1720 /* Frameworks */,
@@ -61,13 +61,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				1C7DF1D32CD8540700DC1720 /* SampleKeyboard CustomBar */,
+				1C7DF1D32CD8540700DC1720 /* SampleKeyboardCustomBar */,
 			);
-			name = "SampleKeyboard CustomBar";
+			name = SampleKeyboardCustomBar;
 			packageProductDependencies = (
 			);
 			productName = "SampleKeyboard CustomBar";
-			productReference = 1C7DF1D12CD8540700DC1720 /* SampleKeyboard CustomBar.app */;
+			productReference = 1C7DF1D12CD8540700DC1720 /* SampleKeyboardCustomBar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1C7DF1CC2CD8540700DC1720 /* Build configuration list for PBXProject "SampleKeyboard CustomBar" */;
+			buildConfigurationList = 1C7DF1CC2CD8540700DC1720 /* Build configuration list for PBXProject "SampleKeyboardCustomBar" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1C7DF1D02CD8540700DC1720 /* SampleKeyboard CustomBar */,
+				1C7DF1D02CD8540700DC1720 /* SampleKeyboardCustomBar */,
 			);
 		};
 /* End PBXProject section */
@@ -305,7 +305,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1C7DF1CC2CD8540700DC1720 /* Build configuration list for PBXProject "SampleKeyboard CustomBar" */ = {
+		1C7DF1CC2CD8540700DC1720 /* Build configuration list for PBXProject "SampleKeyboardCustomBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1C7DF1DD2CD8540900DC1720 /* Debug */,
@@ -314,7 +314,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1C7DF1DF2CD8540900DC1720 /* Build configuration list for PBXNativeTarget "SampleKeyboard CustomBar" */ = {
+		1C7DF1DF2CD8540900DC1720 /* Build configuration list for PBXNativeTarget "SampleKeyboardCustomBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1C7DF1E02CD8540900DC1720 /* Debug */,

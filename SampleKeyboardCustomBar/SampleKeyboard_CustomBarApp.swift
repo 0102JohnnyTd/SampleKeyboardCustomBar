@@ -11,7 +11,7 @@ import SwiftUI
 struct SampleKeyboard_CustomBarApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HogeScreen()
         }
     }
 }
